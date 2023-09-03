@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <section id="loading">
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </section>
+
+    <section class="sideBar d-flex justify-content-center align-content-center">
+      <div class="content p-4 d-flex flex-column justify-content-between">
+        <div class="content-text d-flex flex-column">
+          <span id="search-link" class="m-2 position-relative">search</span>
+          <span id="categories-link" class="m-2 position-relative"
+            >categories</span
+          >
+          <span id="Areas-link" class="m-2 position-relative">area</span>
+          <span id="Ingredients-link" class="m-2 position-relative"
+            >ingredients</span
+          >
+          <span id="contact-link" class="m-2 position-relative"
+            >contact us</span
+          >
+        </div>
+        <div>
+          <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bar py-4 px-2 d-flex flex-column align-items-center justify-content-between"
+      >
+        <img src="logo.png" class="w-100" alt="" />
+        <div id="open-close">
+          <i id="open" class="fa fa-align-justify"></i>
+          <i id="close" class="fa fa-close d-none"></i>
+        </div>
+        <div class="icons d-flex flex-column">
+          <i class="fa fa-solid fa-globe"></i>
+          <i class="fa fa-solid fa-share"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="search" class="d-none">
+      <div class="container w-75">
+        <div class="row my-4 d-flex justify-content-around">
+          <div class="col-6">
+            <input
+              id="text-name"
+              type="text"
+              class="form-control bg-transparent text-white"
+              placeholder="Search By Name"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              id="text-letter"
+              type="text"
+              class="form-control bg-transparent text-white"
+              placeholder="Search By First Letter"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home">
+      <div class="container">
+        <div id="data" class="row py-4 g-4"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="d-none">
+      <div class="container w-75">
+        <div class="row g-4 m-3">
+          <div class="col-md-6">
+            <input
+              id="inp1"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
+            <div id="nameAlert" class="alert alert-danger mt-2 d-none">
+              Special characters and numbers not allowed
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="inp2"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="inp3"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Phone"
+            />
+            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Enter valid Phone Number
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="inp4"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Age"
+            />
+            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Enter valid age
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="inp5"
+              type="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+            />
+            <div
+              id="passwordAlert"
+              class="alert alert-danger w-100 mt-2 d-none"
+            >
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="inp6"
+              type="password"
+              class="form-control"
+              placeholder="Repassword"
+            />
+            <div
+              id="repasswordAlert"
+              class="alert alert-danger w-100 mt-2 d-none"
+            >
+              Enter valid repassword
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <button id="Submit" class="btn btn-danger w-25 disabled">
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#loading{
+  background-color:#000;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index:99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+.spinner-border{
+  width: 100px;
+  height: 100px;
+}
+.col-md-3 {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.image {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.layer {
+  position: absolute;
+  width: 100%;
+  top: 200%;
+  bottom: 0px;
+  background-color: #f9f6f6ca;
+  transition: top 1s;
+  overflow: hidden;
+}
+.layer > span {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.col-md-3:hover .layer {
+  top: 0px;
+}
+
+.sideBar {
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: -257px;
+}
+
+.sideBar .bar {
+  background-color: #fff;
+  width: 70px;
+  height: 100%;
+  cursor: pointer;
+}
+.sideBar .fa {
+  font-size: 30px;
+}
+.icons .fa {
+  font-size: 15px;
+  margin: 2px;
+}
+.sideBar .content {
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.links .fa {
+  font-size: 18px;
+  color: #fff;
+  margin: 3px;
+}
+.content-text {
+  height: 100px;
+  position: relative;
+}
+
+.content-text span {
+  margin: 10px;
+}
+input::placeholder {
+  background-color: #000;
+  color: #fff;
+}
+.box {
+  margin: 20px 10px;
+  color: #fff;
+}
+.box .fa {
+  font-size: 60px;
+}
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contact input::placeholder {
+  background-color: #fff;
+}
+#contact input {
+  margin: 10px 0px;
+}
